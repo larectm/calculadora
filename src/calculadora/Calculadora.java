@@ -36,4 +36,13 @@ public class Calculadora {
 	{
 		ans=0;
 	}
+	public int div (int a , int b)
+	{
+		if(b==0)
+		{
+			throw new ArithmeticException("no puedes dividir por cero!!");
+		}
+		ans = a  / b;
+		return ans; 
+	}
 }

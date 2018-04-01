@@ -8,6 +8,8 @@ import org.junit.After;
 
 public class CalculadoraTest {
 	Calculadora calc ;
+
+	
 @Before	
 public void before ()
 {
@@ -29,7 +31,7 @@ public void testSum()
 	assertEquals(esper,resul);
 			
 }
-
+@Test
 public void testanssuma()
 {
 	System.out.println("andsum()");
@@ -41,12 +43,14 @@ public void testanssuma()
 @Test
 public void testDiv()
 {
+	System.out.println("div () ");
 	calc.div(5,2);
 }
 @Test(expected = ArithmeticException.class)
 public void testDivPorCero() {
+	System.out.println("div () cone exception");
 	calc.div(5, 0);
 }
 //timeout controla el tiempo "detiene los siclos infinitos"
-}
+
 }
