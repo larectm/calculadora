@@ -32,4 +32,8 @@ public class Calculadora {
 	{
 		return ans;
 	}
+	public void clear ()
+	{
+		ans=0;
+	}
 }
