@@ -5,10 +5,24 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
+import org.junit.BeforeClass;
+import org.junit.AfterClass;
 
 public class CalculadoraTest {
-	Calculadora calc ;
+	static Calculadora calc ;
 
+@BeforeClass
+public static void beforeClass()
+{
+	System.out.println("beforeclass ()");
+	calc = new Calculadora ();
+}
+@AfterClass
+public static void AfterClass()
+{
+	System.out.println("Afterclass");
+	calc = new Calculadora();
+}
 	
 @Before	
 public void before ()
