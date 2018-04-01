@@ -1,30 +1,35 @@
 package calculadora;
 
 public class Calculadora {
-	public static int suma (int a, int b)
-	{
-		return a+b;
-	}
+	private int ans;
 	
-	public static int resta (int a, int b)
 	{
-		return a-b;
+		ans=0;
 		
 	}
 	
-	public static void main (String arg [])
+	public int add (int a, int b)
 	{
-		int a = 3, b = 2;
-		int res = suma (a,b);
-		int esperado =5;
-		if(res== esperado)
-		{
-			System.out.println("Este programa esta bien hecho");
-		}
-		else {
-			System.out.println("este programa esta mal echo");
-			
-		}
-				
+		ans = a+b;
+		return ans;
+	}
+	public int sub	(int a, int b)
+	{
+		ans = a-b;
+		return ans;				
+	}
+	public int add (int v)
+	{
+		ans += v;
+		return ans;
+	}
+	public int sub(int v)
+	{
+		ans -=v;
+		return ans;
+	}
+	public int ans()
+	{
+		return ans;
 	}
 }
