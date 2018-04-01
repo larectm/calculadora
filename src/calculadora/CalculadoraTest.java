@@ -38,4 +38,15 @@ public void testanssuma()
 	int esper= 5;
 	assertEquals(esper, resul);
 	}
+@Test
+public void testDiv()
+{
+	calc.div(5,2);
+}
+@Test(expected = ArithmeticException.class)
+public void testDivPorCero() {
+	calc.div(5, 0);
+}
+//timeout controla el tiempo "detiene los siclos infinitos"
+}
 }
